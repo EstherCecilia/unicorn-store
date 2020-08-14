@@ -17,6 +17,12 @@
     <title><%= title %></title>
   </head>
   <style>
+    a {
+      color: black;
+    }
+    a:link {
+      color: black;
+    }
     .table-wrapper {
       margin-top: 50px;
     }
@@ -33,10 +39,21 @@
   <body>
     <div class="page-wrapper">
       <nav class="navbar navbar-light bg-light">
-        <span class="navbar-brand mb-0 h1"><a href="/">unicorn store </a></span>
-        <a class="float-right" href="/player/add" title="Add a New Player"
+        <span class="navbar-brand mb-0 h1">
+          <a class="btn btn-secondary btn-lg" href="/" role="button"
+            >unicorn store</a
+          >
+          <!-- <a href="/">unicorn store </a> -->
+        </span>
+        <a
+          class="float-right btn btn-secondary btn-lg"
+          href="/player/add"
+          role="button"
+          >Add an unicorn</a
+        >
+        <!-- <a class="float-right" href="/player/add" title="Add a New Player"
           >Add an unicorn
-        </a>
+        </a> -->
       </nav>
     </div>
   </body>
